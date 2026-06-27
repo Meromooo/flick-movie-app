@@ -42,11 +42,29 @@ function Home() {
         transition={{ duration: 0.6 }}
         className="mb-12 text-center"
       >
-        <h1 className="text-5xl font-bold text-white mb-3">
-          Discover <span className="text-flick-accent">Movies</span>
+        <h1 className="text-5xl font-bold mb-3" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+          <span style={{
+            background: 'linear-gradient(90deg, #6B7280, #ffffff, #6B7280)',
+            backgroundSize: '200% auto',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            animation: 'shimmer 3s linear infinite',
+            display: 'inline-block',
+          }}>
+            Discover
+          </span>
+          {' '}
+          <span style={{
+            color: '#F5A623',
+            animation: 'neon-pulse 2s ease-in-out infinite',
+            display: 'inline-block',
+          }}>
+            Movies
+          </span>
         </h1>
         <p className="text-flick-muted text-lg">
-          Trending and popular films, all in one place.
+          All trending and popular films, All in a Flick!
         </p>
       </motion.div>
 

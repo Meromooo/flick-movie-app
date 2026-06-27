@@ -22,3 +22,25 @@ img {
   display: block;
   max-width: 100%;
 }
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes neon-pulse {
+  0%, 100% { text-shadow: 0 0 8px rgba(245,166,35,0.5), 0 0 16px rgba(245,166,35,0.2); }
+  50%       { text-shadow: 0 0 20px rgba(245,166,35,1), 0 0 40px rgba(245,166,35,0.5), 0 0 80px rgba(245,166,35,0.2); }
+}
+
+.nav-link {
+  color: #9CA3AF;
+  display: inline-block;
+  transition: color 0.15s ease, transform 0.15s ease, text-shadow 0.15s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
